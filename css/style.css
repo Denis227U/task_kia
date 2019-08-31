@@ -1,0 +1,1293 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Roboto Condensed', sans-serif; */
+
+/* --------------------------------------------------------------------------- */
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+abbr,
+em,
+img,
+ins,
+q,
+s,
+small,
+strong,
+sub,
+sup,
+b,
+u,
+i,
+ol,
+ul,
+li,
+form,
+label,
+article,
+aside,
+footer,
+header,
+menu,
+nav,
+output {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+:focus {
+    outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+html {
+    font-size: 100%;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+img {
+    border: 0;
+    /* 1 */
+    -ms-interpolation-mode: bicubic;
+    /* 2 */
+}
+
+form {
+    margin: 0;
+}
+
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+    vertical-align: baseline;
+    /* 3 */
+    *vertical-align: middle;
+    /* 3 */
+}
+
+button,
+input {
+    line-height: normal;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html input[type="button"],
+/* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    /* 2 */
+    cursor: pointer;
+    /* 3 */
+    *overflow: visible;
+    /* 4 */
+}
+
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+html,
+button,
+input {
+    color: #222;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* --------------------------------------------------------------------------- */
+body {
+    overflow-x: hidden;
+}
+
+.col5of12 {
+    width: 41.6%;
+}
+
+.col6of12 {
+    width: 50%;
+}
+
+.col7of12 {
+    width: 58.3%;
+}
+
+.col10of12 {
+    width: 83.3%;
+}
+
+.redBg {
+    background-color: #a30606;
+}
+
+.contBox {
+    margin: 0 auto;
+    width: 1170px;
+    padding: 0;
+    display: flex;
+}
+
+.menu {
+    display: none;
+}
+
+/* --------------------------------------------------------------------------- */
+
+
+
+/* ----------------------MODAL------------------------ */
+.modalFormTitle {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.modalFormInner {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.modalFormInner input {
+    width: 80%;
+    height: 50px;
+    border: 1px solid #d0d0d0;
+    background-color: #ffffff;
+    padding-left: 20px;
+    margin: 0 auto 10px;
+}
+
+.modalFormInner input:focus {
+    border: 1px solid #a30606;
+}
+
+.modalFormInner input::-webkit-input-placeholder {
+    color: #939393;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.modalFormBtn {
+    border: none;
+    background-color: #a30606;
+    width: 80%;
+    height: 50px;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 auto 10px;
+}
+
+.modalFormBtn:hover {
+    color: #ccc;
+}
+
+.modalFormDescription {
+    width: 80%;
+    color: #d8d8d8;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* ----------------------MODAL------------------------ */
+
+
+
+.header {
+    height: 110px;
+}
+
+.headerInnerLeft {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoAvtoholding {
+    margin-right: 65px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logoAvtoholdingImg {
+    margin-right: 10px;
+}
+
+.logoAvtoholdingText {
+    display: block;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+
+}
+
+.logoAvtoholdingText span {
+    display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    letter-spacing: 1.1px;
+}
+
+.headerAddress {
+    display: flex;
+    margin-right: 45px;
+
+}
+
+.headerAddressIcon {
+    margin-right: 10px;
+}
+
+.headerAddresText {
+    display: inline-block;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.headerInnerRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerBtn {
+    border: none;
+    color: #ffffff;
+    background-color: #a30606;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 21px 34px;
+    margin-left: 30px;
+}
+
+.headerBtn:hover {
+    color: #ccc;
+}
+
+.benefit {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    margin: 52px 0 40px;
+    z-index: 10;
+    position: relative;
+}
+
+h1 span {
+    display: block;
+    font-size: 44px;
+    text-transform: uppercase;
+    margin: 18px 0 28px;
+}
+
+.benefitBtn {
+    display: inline-block;
+    border: none;
+    background-color: #ffffff;
+    color: #a30606;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 22px 63px;
+    margin-bottom: 93px;
+}
+
+.benefitBtn:hover {
+    background-color: #ccc;
+}
+
+.benefitDescription {
+    color: #fefefe;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.imgWrapper {
+    position: relative;
+}
+
+.imgWrapper img {
+    position: absolute;
+    margin-left: -33.2%;
+}
+
+.selectionItemsWrapper {
+    margin: 55px 0 42px;
+}
+
+.columnsItem {
+    -webkit-column-width: 100px;
+    -moz-column-width: 100px;
+    column-width: 100px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 5px;
+    -moz-column-gap: 5px;
+    column-gap: 5px;
+    -webkit-column-rule: 0px solid #ccc;
+    -moz-column-rule: 0px solid #ccc;
+    column-rule: 0px solid #ccc;
+}
+
+.columnsItem a {
+    display: inline-block;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 auto 15px;
+    letter-spacing: 1.2px;
+}
+
+.columnsItem a:hover {
+    color: #ccc;
+}
+
+.creditForm {
+    margin-left: 40px;
+}
+
+.creditFormTitle {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 70px 0 45px;
+}
+
+.creditFormTitleSpan {
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.creditFormTitleSpanLow {
+    text-transform: lowercase;
+}
+
+.creditFormInner {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.creditFormInner input {
+    width: 45%;
+    height: 50px;
+    border: 1px solid #d0d0d0;
+    background-color: #ffffff;
+    padding-left: 20px;
+}
+
+.creditFormInner input:focus {
+    border: 1px solid #a30606;
+}
+
+.creditFormInner input::-webkit-input-placeholder {
+    color: #939393;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.creditFormBtn {
+    border: none;
+    width: 45%;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.creditFormBtn:hover {
+    color: #ccc;
+}
+
+.carShopItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 55px;
+    margin-bottom: 75px;
+}
+
+.carShopItemHeading {
+    /* width: 67%; */
+}
+
+.carShopItemTitle {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-top: 35px;
+}
+
+.carShopItemTitle span {
+    color: #a30606;
+}
+
+.carShopItemImg {
+    margin-left: 15px;
+}
+
+.carShopItemDescription {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+
+}
+
+.carShopItemPresent {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.carShopItemPresent img {
+    margin-right: 10px;
+}
+
+.carShopItemPresentText {
+    color: #000000;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.carShopItemBenefit {
+    color: #a30606;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.carShopItemOnCreditBtn {
+    width: 100%;
+    border: 1px solid #a30606;
+    background-color: #ffffff;
+    color: #a30606;
+    font-family: KIAM;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px 0 13px;
+    margin-bottom: 10px;
+}
+
+.carShopItemOnCreditBtn:hover {
+    background-color: #ccc;
+}
+
+.carShopItemBenefitBtn {
+    display: inline-block;
+    width: 100%;
+    border: none;
+    background-color: #a30606;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 17px 0 13px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.carShopItemBenefitBtn:hover {
+    color: #ccc;
+}
+
+.carShopItemOfferBtn {
+    width: 100%;
+    border: none;
+    background-color: #333333;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 17px 0 13px;
+    text-transform: uppercase;
+}
+
+.carShopItemOfferBtn:hover {
+    color: #d36262;
+}
+
+.mapSection {
+    margin-bottom: 50px;
+    overflow-x: hidden;
+}
+
+.formContactsWapper {
+    position: absolute;
+    top: 27px;
+    right: 0;
+    background-color: #a30606;
+    /* height: 200px; */
+}
+
+.formContacts {
+    position: relative;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-left: 36px;
+    padding-bottom: 53px;
+    padding-right: 10px;
+}
+
+.formContactsTitle {
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 27px;
+}
+
+.formContactsAddres {
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    margin-bottom: 33px;
+}
+
+.formContactsAddres span {
+    display: block;
+    margin-top: 20px;
+}
+
+.formContactsTel {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    padding: 16px 0 13px 20px;
+    margin-bottom: 12px;
+}
+
+.formContactsTel:focus {
+    border: 1px solid #ff9393;
+}
+
+.formContactsTel::-webkit-input-placeholder {
+    color: #ff9393;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.formContactsBtn {
+    border: none;
+    background-color: #fff;
+    color: #a30606;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 14px 68px 13px;
+}
+
+.formContactsBtn:hover {
+    background-color: #ccc;
+}
+
+
+.formBg {
+    /* display: none; */
+    background-color: #a30606;
+    position: absolute;
+    width: 1000px;
+    height: 100%;
+}
+
+
+.mainRed {
+    overflow-x: hidden;
+    background: #a30606;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #a30606 0%, #a30606 40%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #a30606 0%, #a30606 40%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #a30606 0%, #a30606 40%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .contBox {
+        margin: 0 auto;
+        width: 960px;
+        padding: 0;
+        display: flex;
+    }
+
+    .headerAddress {
+        align-items: center;
+    }
+
+    .headerAddressIcon {
+        display: block;
+        height: 100%;
+    }
+
+    .benefitBtn {
+        margin-bottom: 53px;
+    }
+
+
+}
+
+@media (max-width: 991px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .contBox {
+        margin: 0 auto;
+        width: 720px;
+        padding: 0;
+        display: flex;
+    }
+
+    .headerInnerLeft {
+        justify-content: center;
+    }
+
+    .logoAvtoholding {
+        margin-right: 28px;
+    }
+
+    .headerAddress {
+        align-items: center;
+    }
+
+    .headerAddressIcon {
+        display: block;
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 18px;
+        margin: 0px 0 30px;
+    }
+
+    h1 span {
+        font-size: 38px;
+        margin: 14px 0 22px;
+    }
+
+    .benefitBtn {
+        font-size: 16px;
+        padding: 22px 40px;
+        margin-bottom: 50px;
+    }
+
+    .imgWrapper {
+        top: -45px;
+    }
+
+    .imgWrapper img {
+        transform: scale(0.8, 0.8);
+        margin-left: -66.2%;
+    }
+
+    .creditFormTitle {
+        font-size: 40px;
+        margin: 60px 0 46px;
+    }
+
+    .carShopItem {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+
+    .carShopItemDescription {
+        width: 100%;
+    }
+
+    .carShopItemTitle {
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    .carShopItemImg {
+        height: 182px;
+        margin-bottom: 15px;
+    }
+
+    .carShopItemWrap {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .carShopItemPresent,
+    .carShopItemBenefit {
+        min-width: 90%;
+        margin: 0 auto 15px;
+    }
+
+    .carShopItemOnCreditBtn,
+    .carShopItemBenefitBtn,
+    .carShopItemOfferBtn {
+        width: 90%;
+        margin: 0 auto 15px;
+    }
+
+    .modalBtn {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .contBox {
+        margin: 0 auto;
+        width: 100%;
+        padding: 0;
+        display: flex;
+    }
+
+
+    /* ----------------------MODAL------------------------ */
+    .modalFormTitle {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+
+    .modalFormInner {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .modalFormInner input {
+        width: 100%;
+        height: 50px;
+        border: 1px solid #d0d0d0;
+        background-color: #ffffff;
+        padding-left: 20px;
+        margin: 0 auto 10px;
+    }
+
+    .modalFormInner input::-webkit-input-placeholder {
+        color: #939393;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    .modalFormBtn {
+        border: none;
+        background-color: #a30606;
+        width: 100%;
+        height: 50px;
+        color: #ffffff;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0 auto 10px;
+    }
+
+    .modalFormDescription {
+        width: 100%;
+        color: #d8d8d8;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .modalBtn {
+        text-align: center;
+    }
+
+    /* ----------------------MODAL------------------------ */
+
+
+    .mainRed {
+        background: none;
+    }
+
+    .headerInnerRight {
+        display: none;
+    }
+
+    .col5of12 {
+        width: 100%;
+    }
+
+    .header {
+        height: 90px;
+    }
+
+    .logoAvtoholding {
+        width: 40%;
+        /* margin-right: 20px; */
+        margin-right: 0px;
+    }
+
+    .logoAvtoholdingImg {
+        /* margin-right: 10px; */
+        margin-right: 0px;
+        transform: scale(0.7);
+    }
+
+    .logoAvtoholdingText {
+        display: block;
+        color: #ffffff;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .logoAvtoholdingText span {
+        display: block;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+        letter-spacing: 1.1px;
+    }
+
+    .headerAddress {
+        width: 40%;
+        /* margin-right: 30px; */
+        margin-right: 0px;
+    }
+
+
+    /* ------------------------burger---------------------------- */
+    .menu {
+        height: 62%;
+        width: 100%;
+        background-color: #222;
+        z-index: 9999;
+        display: none;
+        position: absolute;
+        margin-top: 88px;
+        padding: 20px 30px 10px;
+        text-align: center;
+        -webkit-column-width: 100px;
+        -moz-column-width: 100px;
+        column-width: 100px;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 5px;
+        -moz-column-gap: 5px;
+        column-gap: 5px;
+        -webkit-column-rule: 0px solid #ccc;
+        -moz-column-rule: 0px solid #ccc;
+        column-rule: 0px solid #ccc;
+    }
+
+    .menu a {
+        display: inline-block;
+        color: #ffffff;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0 auto 25px;
+        letter-spacing: 1.2px;
+    }
+
+    .headerInnerLeft {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .burger-menu {
+        margin-top: 6px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .bar {
+        transition: 0.4s;
+    }
+
+    .bar-1 {
+        width: 5em;
+        display: block;
+        width: 40px;
+        border-top: 6px solid #fff;
+        padding-top: 6px;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    .bar-2 {
+        width: 5em;
+        display: block;
+        width: 40px;
+        border-top: 6px solid #fff;
+        padding-top: 5px;
+        display: fixed;
+        transition: 0.4s;
+    }
+
+    .bar-3 {
+        width: 5em;
+        display: block;
+        width: 40px;
+        border-top: 6px solid #fff;
+        padding-top: 5px;
+        transition: 0.4s;
+    }
+
+    .change .bar-1 {
+        -webkit-transform: rotate(-45deg) translate(-10px, 5px);
+        transform: rotate(-45deg) translate(-10px, 8px);
+    }
+
+    .change .bar-2 {
+        opacity: 0;
+    }
+
+    .change .bar-3 {
+        -webkit-transform: rotate(45deg) translate(-10px, 5px);
+        transform: rotate(45deg) translate(-10px, -5px);
+    }
+
+    /* ------------------------burger---------------------------- */
+
+
+    .benefit {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    h1 span {
+        font-size: 32px;
+        margin: 14px 0 18px;
+        padding: 0 20px;
+    }
+
+    .benefitBtn {
+        display: block;
+        width: 65%;
+        font-size: 16px;
+        padding: 22px 40px;
+        margin: 0 auto 50px;
+    }
+
+    .col6of12 {
+        width: 100%;
+    }
+
+    .imgWrapper {
+        top: 0;
+    }
+
+    .imgWrapper img {
+        position: relative;
+        margin: 0;
+        width: 100%;
+        transform: none;
+    }
+
+
+    .creditFormInner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .creditFormInner input {
+        width: 90%;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+
+    .creditFormBtn {
+        width: 90%;
+        height: 50px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    .d-none {
+        display: none !important;
+    }
+
+    .col7of12 {
+        width: 100%;
+    }
+
+    .carShopWindow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carShopItemHeading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carShopItemWrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .carShopItemPresent,
+    .carShopItemBenefit {
+        min-width: 40%;
+        margin: 0 auto 15px;
+    }
+
+    /* mapSection */
+    .mapSection {
+        margin: 0;
+    }
+
+    .mapSection .col10of12 {
+        width: 100%;
+    }
+
+    .mapSection .formContactsWapper {
+        position: relative;
+        top: 0;
+    }
+
+    .mapSection .formBg {
+        display: none;
+    }
+
+    .mapSection .formContacts {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding: 25px 0;
+    }
+
+    .mapSection .formContactsBtn {
+        padding: 14px 40px 13px;
+    }
+
+
+}
+
+@media (max-width: 479px) {
+
+    .logoAvtoholding {
+        width: 50%;
+        margin-right: 0px;
+    }
+
+    .logoAvtoholdingImg {
+        margin-right: 0px;
+        transform: scale(0.5);
+    }
+
+    .logoAvtoholdingText {
+        display: block;
+        font-size: 8px;
+        margin-left: -8px;
+    }
+
+    .logoAvtoholdingText span {
+        font-size: 14px;
+        margin-bottom: 6px;
+        letter-spacing: 1.1px;
+    }
+
+    .headerAddress {
+        width: 40%;
+        margin-right: 0px;
+    }
+
+    .headerAddressIcon {
+        margin-right: 10px;
+    }
+
+    .headerAddresText {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .creditFormTitle {
+        font-size: 30px;
+        margin: 50px 0 40px;
+    }
+
+    .carShopItemWrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carShopItemImg {
+        height: 160px;
+    }
+
+    .benefitBtn {
+        display: block;
+        width: 80%;
+    }
+
+}
